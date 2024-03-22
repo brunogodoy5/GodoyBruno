@@ -1,1 +1,1 @@
-JSON
+alert("Hola mundo)")
