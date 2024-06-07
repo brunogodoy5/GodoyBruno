@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS\styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+
+
+
+    <input type="radio" id="local" name="personas" value="local">
+    <label for="local">Local</label>
+    <input type="radio" id="internet" name="personas" value="internet">
+    <label for="internet">Internet</label>
+
+
+
+
+    <button onclick="searchUser()">Buscar personas</button>
+    <!-- Contenedor principal que divide la página en tres partes: izquierda, línea divisoria y derecha -->
+    <div class="container">
+        <!-- Contenedor para las mujeres, colocado a la izquierda -->
+        <div class="left">
+            <h2>Mujeres</h2>
+            <div id="mujeres"></div>
+            <p id="contador"></p>
+        </div>
+        <!-- Línea divisoria vertical -->
+        <div class="divider"></div>
+        <!-- Contenedor para los hombres, colocado a la derecha -->
+        <div class="right">
+            <h2>Hombres</h2>
+            <div id="hombres"></div>
+            <p id="contador2"></p>
+        </div>
+    </div>
+    <div id="mayorEdad"></div>
+    <p id="contador3"></p>
+
+
+
+
+    <script src="JS\funciones.js"></script>
+</body>
+</html>
