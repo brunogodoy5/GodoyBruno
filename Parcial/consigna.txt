@@ -1,0 +1,18 @@
+Generar array de productos 
+con los siguientes datos: 
+codigo, nombre,color,tipo,
+precio unitario
+el codigo debe ser 001 para 
+comida y 002 para bebida, 
+necesito 20 productos, 
+el tipo puede ser 
+comestible o bebible
+
+clase producto
+clase comida hereda de producto,va a tener peso
+clase bebida hereda de producto litro
+pantalla con boton procesar ,va a tener
+
+Instanciar una comida si el codigo es 001 o una bebida si el codigo es 002 
+y mostar informacion
+cada clase y objeto va en un archivo diferente
