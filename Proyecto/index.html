@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Daia</title>
+</head>
+<body>
+    <div class="contenedor" style="background-color: rgb(0, 0, 0)">  
+        <h1 class="" style="color: gold;">Pokemones</h1>
+        <img class="imagen" src="https://iili.io/HsRo4vs.png" alt="">
+    </div>
+
+    <h2 class="titulo">Compara ataques de pokemones</h2>
+    
+    <div class="contenedorInput">
+            <br>
+        <h3>Ingresa ID Primer Pokemon</h3>
+        <input id="PokemonUno" class="InputPokemon"></input>
+
+
+        <h3>Ingresa ID Segundo Pokemon</h3>
+        <input id="PokemonDos" class="InputPokemon"></input>
+            <br><br>
+        <button id="IngresoPokemon">Ingresar Pokemones</button>
+            <br><br>
+        <button id="nuevoBoton">Speed</button>
+    </div>
+    <br><br>
+
+    <h1 class="titulo">Pelea de Pokemones</h1>
+
+    <span class="contenedor">
+        <div class="Tarjeta">
+            <h2 id="TituloPokemonUno" class="TituloPokemon"></h2>
+            <img id="ImagenPokemonUno" style="width: 130px">
+            <ul id="listaPokemonUno" class="listaPokemon"></ul>
+            <ul id="listaPokemonUno2" class="listaPokemonUno2"></ul>
+        </div>
+
+        <h1 class="titulo" style="margin: 30px; font-size: 40px;">VS</h1>
+
+        <div class="Tarjeta">
+            <h2 id="TituloPokemonDos" class="TituloPokemon"></h2>
+            <img id="ImagenPokemonDos" style="width: 130px">
+            <ul id="listaPokemonDos" class="listaPokemon"></ul>
+            <ul id="listaPokemonDos2" class="listaPokemon2"></ul>
+        </div>
+    </span>
+  
+    <h1 class="titulo" style="color: rgb(13, 3, 146);">Pokemon Ganador</h1>
+
+    <span class="contenedor">
+        <div class="Tarjeta">
+            <h2 id="TituloPokemonGanador" class="TituloPokemon"></h2>
+            <img id="ImagenPokemonGanador" style="width: 130px">
+            <ul id="listaPokemonGanador" class="listaPokemon"></ul>
+        </div>
+    </span>
+
+</body>
+    <script src="js/pokemon.js"></script>
+</html>

@@ -1,0 +1,96 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.titulo {
+    color: rgb(204, 14, 14);
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.contenedorInput {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    width: 100%;
+}
+
+.InputPokemon {
+    width: 30%;
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 5px;
+}
+
+#IngresoPokemon {
+    font-size: 20px; 
+    font-weight: bold; 
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+
+    border-radius: 200px; 
+    background-color: rgb(251, 255, 28);
+    width: 50%;
+}
+
+input, button {
+    padding: 2mm;
+    size: 23cm;
+}
+
+.imagen {
+    width: 3cm;
+    padding: -100cm;
+}
+
+.Tarjeta {
+    background-color: rgba(245, 199, 59, 0.87);  
+
+    border-color: rgb(209, 3, 3);
+    border-radius: 15px;
+    border-style:double;
+    border-width: 5px;
+
+    box-sizing: border-box;
+    height: 330px;
+    width: 250px;
+    margin: 5px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.TituloPokemon {
+    color:rgb(128, 2, 2);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+
+    text-transform: uppercase;
+    text-decoration: underline overline;
+
+    letter-spacing: 5px;
+}
+
+.listaPokemon {
+    text-transform: uppercase;
+    color: rgb(63, 0, 0);
+    font-size: 25px;
+
+    text-align: center;
+    margin-top: 35px;
+    padding: 0;
+
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
