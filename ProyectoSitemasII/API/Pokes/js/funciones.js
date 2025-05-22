@@ -149,6 +149,71 @@ function pelea(datosUno,datosDos) {
 }
 
 
+
+async function generar() {
+    const equipo = [];
+    for (let i = 0; i < 3; i++) {
+        const randomId = Math.floor(Math.random() * 1015) + 1;
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${randomId}`);
+        const data = await response.json();
+        equipo.push(data);
+    }
+    return equipo;
+}
+
+function calcular(equipo) {
+    let ataque = 0;
+    let defensa = 0;
+    
+    equipo.forEach(pokemon => {
+        pokemon.stats.forEach(stat => {
+            if (stat.stat.name === 'attack') {
+                ataque += stat.base_stat;
+            }
+            if (stat.stat.name === 'defense') {
+                defensa += stat.base_stat;
+            }
+        });
+    });
+    
+    return { ataque, defensa };
+}
+
+async function pelea() {
+    const equipoA = await generar();
+    const equipoB = await generar();
+
+    const statsA = calcular(equipoA);
+    const statsB = calcular(equipoB);
+
+    console.log('A:', equipoA.map(p => p.name));
+    console.log('B:', equipoB.map(p => p.name));
+
+    console.log('Ataque A:', statsA.ataque);
+    console.log('Defensa A:', statsA.defensa);
+    console.log('Ataque B:', statsB.ataque);
+    console.log('Defensa B:', statsB.defensa);
+
+    if (statsA.ataque > statsB.defensa) {
+        console.log('Ataque A gana a Defensa B');
+    } else if (statsA.ataque < statsB.defensa) {
+        console.log('Defensa B gana a Ataque A');
+    } else {
+        console.log('Empate');
+    }
+
+    if (statsB.ataque > statsA.defensa) {
+        console.log('Ataque B gana Defensa A');
+    } else if (statsB.ataque < statsA.defensa) {
+        console.log('Defensa A gana Ataque B');
+    } else {
+        console.log('Empate');
+    }
+}
+
+pelea();
+
+
 // pokemon 1 ataca defenda del otro 
 // pokemon 2 ataca defensa del otro 
 // dar resultado.
